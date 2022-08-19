@@ -1,0 +1,271 @@
+@font-face {
+    font-family: chemreaction;
+    src: url(https://www.corsaxtremecarcrew.xyz/chemrea.ttf);
+
+    font-family: kitchenpolice;
+    src: url(https://www.corsaxtremecarcrew.xyz/kitchenpolice.ttf);
+}
+
+.site-description {
+	font-size: 2em;
+}
+
+.site-description a {
+	color: #3300FF;
+	text-shadow: -1px 1px #000000, -3px 3px  #18007a;
+    font-family: kitchenpolice;
+}
+
+.site-description a:hover {
+	text-decoration:none;
+}
+
+.site-description p {
+	margin: 0;
+	color: #ffff00;
+	font-family: chemreaction;
+}
+
+.marquee {
+	width: 100%;
+	overflow: hidden;
+	animation: rainbow 2s step-start infinite;
+}
+
+#page-body {
+    margin: 4px 0;
+    width: 80%;
+    display: inline-block;
+	float: right;
+}
+
+.page-sidebar {
+	margin: 4px 0 10px 0;
+	width: 19%;
+	display: inline-block;
+}
+
+.page-sidebar h2 {
+	text-align: center;
+	margin-bottom: 12px;
+	background: #3300FF;
+	color: #ffffff;
+	text-shadow: -2px 2px 2px #000000;
+	padding: 2px;
+	border-radius: 45%;
+	box-shadow: 0px 1px 1px #000000, 0px 4px 3px 2px rgba(24,0,122,1);
+	-moz-animation: spin-horizontal 4s infinite linear;
+    -o-animation: spin-horizontal 4s infinite linear;    
+    -webkit-animation: spin-horizontal 4s infinite linear;
+    animation: spin-horizontal 2s infinite linear;
+}
+
+.inputbox.search {
+	background: #c0c0c0;
+	border-color: #ffffff #aaaaaa #aaaaaa #ffffff;
+	color: #000000;
+}
+
+.inputbox.search:hover, .inputbox.search:focus {
+	background: #d0d0d0;
+	border-color: #ffffff #aaaaaa #aaaaaa #ffffff;
+	color: #000000;
+}
+
+.forabg ~ .forabg { /* select all but the first */
+	margin-top: 10px;
+}
+
+a.button:hover {
+	color: #000000;
+}
+
+.page-sidebar ul {
+	font-size: 1.5em;
+	list-style: inside url(images/spinning-globe.gif);
+}
+
+.page-sidebar .separator {
+	list-style: none;
+	width: 100%;
+	height: 3px;
+	margin: 5px 0;
+	background: url(images/hr-small.png) no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+}
+
+.forabg, .forumbg {
+	border: 1px solid #888888;
+}
+
+li.header {
+	font-size: 1.2em;
+	padding-top: 3px;
+	padding-left: 5px;
+}
+
+.pagination .button .icon {
+	color: #eeeeee;
+}
+
+.post {
+	border: 1px solid #888888;
+}
+
+.profile-rank {
+	font-weight: bold;
+	color: #eeee00;
+}
+
+.online {
+	animation: rainbow 2s step-start infinite;
+}
+
+.cp-mini a:hover {
+	color: #ffff00;
+}
+
+.stat-block {
+	text-align: center;
+	font-size: 16px;
+}
+
+.stats {
+	margin-bottom: 3px;
+}
+
+.stats .counter {
+	display: inline-block;
+	margin-right: 15px;
+	margin-bottom: 4px;
+	text-align: center;
+}
+
+.stats strong:before {
+	content: '\A';
+	white-space: pre;
+}
+
+.counter-style {
+	color: #3300ff;
+	background: #000000 url();
+	font-family: Rye;
+	font-weight: normal;
+	border: 2px outset #30f;
+	margin: 2px;
+	padding: 2px 3px;
+	display: inline-block;
+	width: 16px;
+	box-shadow: -2px 2px 2px 0px #000000, -2px 2px 2px 0px #000000 inset;
+	text-shadow: -2px 2px 0px #2f00eb6b;
+}
+
+.newest-user strong:before {
+	content: ':\A';
+	white-space: pre;
+}
+
+.newest-user a {
+	font-size: 22px;
+	animation: rainbow 2s step-start infinite;
+	margin-bottom: 10px;
+}
+
+.contact-us a {
+	background: url(images/contact.gif) no-repeat left center, url(images/contact.gif) no-repeat right center;
+	padding: 0 30px;
+	font-family: rye;
+	font-size: 20px;
+	display: inline;
+	text-transform: uppercase;
+	animation: rainbow 2s linear infinite;
+}
+
+/* Animations */
+
+@keyframes spin-horizontal {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(90deg); }
+    100% { transform: rotateY(0deg); }
+}
+
+@keyframes rainbow {
+    0% { color: #ff0000; }
+    16.66% { color: #ff8800; }
+    33.32% { color: #ffff00 }
+    49.98% { color: #00ff00; }
+    66.64% { color: #0088ff; }
+    83.3% { color: #aa00aa; }
+    100% { color: #ff0000; }
+}
+
+@keyframes border-rainbow {
+    0% { border-color: #ff0000; }
+    16.66% { border-color: #ff8800; }
+    33.32% { border-color: #ffff00 }
+    49.98% { border-color: #00ff00; }
+    66.64% { border-color: #0088ff; }
+    83.3% { border-color: #aa00aa; }
+    100% { border-color: #ff0000; }
+}
+
+/* Footer logos... */
+.footer-logo {
+	display: inline-block;
+	margin: 3px;
+	width: 88px;
+	height: 31px;
+	background-size: 88px 31px;
+}
+
+.number1 {
+	background-image: url(images/number1.gif);
+}
+
+.flaming {
+	background-color: #888888;
+	border: 1px outset #cccccc;
+	box-sizing: border-box;
+	background-image: url(images/flaming.gif);
+}
+
+.browser {
+	background-image: url(images/browser.gif);
+}
+
+/* Resposnsive... */
+
+@media (min-width: 700px) {
+	.nav-main {
+		display: none !important;
+	}
+	
+	ul.navlinks {
+		border-top: none;
+	}
+}
+
+@media (max-width: 700px) {
+	.headerbar {
+		background-size: 70px;
+	}
+	
+	#page-body {
+		margin: 4px 0;
+		clear: both;
+		width: 100%;
+		float: none;
+	}
+	
+	.page-sidebar {
+		display: none;
+	}
+}
+
+@media (max-width: 900px) {
+	.wrap {
+		margin: 0;
+		padding: 3px;
+	}
+}
