@@ -12,22 +12,28 @@
 </head>
 <body>
 
+<audio id='music' loop autoplay>
 
-<audio id="music" volume="0.1" autoplay controls>
+  <source src="" type="audio/mpeg">
+
 </audio>
 
-<script type="text/javascript">
-    function addAudio() {
-        fileArray = ["https://powerfulpants.github.io/bayviewsbest/music/ballerSFX.mp3", "https://powerfulpants.github.io/bayviewsbest/music/limbbiscuit.mp3", "https://powerfulpants.github.io/bayviewsbest/music/mitachingy.mp3"]
-        var num = Math.floor(Math.random() * fileArray.length);
-        var x = document.getElementById("music");
-        x.innerHTML = "";
-        x.innerHTML += '<source src="audio/' + fileArray[num] + '" type="audio/mpeg">';
+  <script>
+    function myFunction() {
+       fileArray = ["https://powerfulpants.github.io/bayviewsbest/music/ballerSFX.mp3", "https://powerfulpants.github.io/bayviewsbest/music/limbbiscuit.mp3", "https://powerfulpants.github.io/bayviewsbest/music/mitachingy.mp3"];
+       var num = Math.floor(Math.random() * fileArray.length);
+       var x = document.getElementById("music");
+       x.src = fileArray[num]; 
 
-        x.play(); 
+       var audio = document.getElementById("music");
+       audio.volume = 0.2;
+       audio.autoplay = true;
+       audio.load();
     }
-    addAudio();
-</script>
+
+    myFunction()
+
+  </script>
 
 <body data-new-gr-c-s-check-loaded="14.1046.0" data-gr-ext-installed="" style="background-image: url(https://powerfulpants.github.io/bayviewsbest/sitebg.png);background-position-x: center;background-repeat: no-repeat;background-color: black;" vertical-allign="center">
 
