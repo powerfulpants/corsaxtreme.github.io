@@ -13,14 +13,20 @@
 <body>
 
 
-<audio autoplay loop id="myaudio">
-  <source src="https://powerfulpants.github.io/bayviewsbest/swaggest.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
+<audio id="music" volume="0.1" autoplay controls>
 </audio>
 
-<script>
-  var audio = document.getElementById("myaudio");
-  audio.volume = 0.15;
+<script type="text/javascript">
+    function addAudio() {
+        fileArray = ["https://powerfulpants.github.io/bayviewsbest/music/ballerSFX.mp3", "https://powerfulpants.github.io/bayviewsbest/music/limbbiscuit.mp3", "https://powerfulpants.github.io/bayviewsbest/music/mitachingy.mp3"]
+        var num = Math.floor(Math.random() * fileArray.length);
+        var x = document.getElementById("music");
+        x.innerHTML = "";
+        x.innerHTML += '<source src="audio/' + fileArray[num] + '" type="audio/mpeg">';
+
+        x.play(); 
+    }
+    addAudio();
 </script>
 
 <body data-new-gr-c-s-check-loaded="14.1046.0" data-gr-ext-installed="" style="background-image: url(https://powerfulpants.github.io/bayviewsbest/sitebg.png);background-position-x: center;background-repeat: no-repeat;background-color: black;" vertical-allign="center">
